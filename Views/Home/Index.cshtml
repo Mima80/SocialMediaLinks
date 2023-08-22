@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Social Media Links</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+    <h1 class="margin-left">Social Media Links</h1>
+    <environment exclude="Development">
+        <a href="@ViewBag.Twitter" class="margin-left margin-top box">
+            Twitter
+        </a>
+        <a href="@ViewBag.Instagram" class="margin-left margin-top box">
+            Instagram
+        </a>
+        <a href="@ViewBag.YouTube" class="margin-left margin-top box">
+            YouTube
+        </a>
+        <a href="@ViewBag.Facebook" class="margin-left margin-top box">
+            Facebook
+        </a>
+    </environment>
+    <environment names="Development">
+        <a href="@ViewBag.Twitter" class="margin-left margin-top box">
+            Twitter
+        </a>
+
+        <a href="@ViewBag.YouTube" class="margin-left margin-top box">
+            YouTube
+        </a>
+        <a href="@ViewBag.Facebook" class="margin-left margin-top box">
+            Facebook
+        </a>
+    </environment>
+</body>
+</html>
